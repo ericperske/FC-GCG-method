@@ -1,2 +1,4 @@
 This repository contains a python-implementation of the FC-GCG method for a specific model problem.
-The model problem is a non-smooth optimization problem of the form $$\min_{v_j\in\mathbb{R}^n,j=1,\dots,N}\frac{1}{2}\lVert\sum_{j=1}^NK_jv_j-y_d\rVert_2^2+\alpha\sum_{j=1}^N\lVert v_j\rVert_2$$.
+The model problem is a non-smooth optimization problem of the form $$\min_{v_j\in\mathbb{R}^n,j=1,\dots,N}\frac{1}{2}\lVert\sum_{j=1}^NK_jv_j-y_d\rVert_2^2+\alpha\sum_{j=1}^N\lVert v_j\rVert_2$$, where $K_j\in\mathbb{R}^{m\times n},j=1,\dots,N$.
+The method uses the packages $\texttt{numpy}$, $\texttt{matplotlib.pyplot}$ and $\texttt{cvxpy}$, where the latter is used to solve the inherent quadratic optimization problem of the general method.
+The jupyter notebook contains a lot of setup, since it was used for the experiments for my Bachelorthesis. The setup was created to ensure recreatability of my results for grading purposes. Feel free to ignore everything but the solver itself and use it as you wish!
